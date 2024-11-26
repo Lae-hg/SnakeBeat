@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'Écoute</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <h1>SnakeBeat</h1>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Explorer</a></li>
+            <li><a href="#">Bibliothèque</a></li>
+            <li><a href="#">Profil</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <main class="main-container">
+        <!-- Pochette de l'album en haut -->
+        <img src="album-cover.jpg" alt="Pochette de l'album" class="album-cover">
+        
+        <!-- Informations de l'album -->
+        <div class="details">
+            <h2>Imagine Dragon : Enemy</h2>
+            <p><strong>Imagine Dragon </strong></p>
+            <p><strong>Année : </strong>2021</p>
+            <p>Un album incroyable rempli de hits incontournables.</p>
+        </div>
+    
+        <!-- Lecteur audio -->
+        <div class="audio-player">
+          <h3>Lecture en cours</h3>
+          <div class="progress-container">
+            <span>1:30</span>
+            <progress value="30" max="100"></progress>
+            <span>3:45</span>
+          </div>
+          <audio controls>
+            <source src="Imagine Dragons x J.I.D - Enemy (from the series Arcane League of Legends).mp3" type="audio/mpeg">
+          </audio>
+        </div>
+    
+        <!-- Boutons de contrôle -->
+        <div class="controls">
+          <button class="btn btn-prev">&#9664;</button>
+          <button class="btn btn-play">&#9654;</button>
+          <button class="btn btn-next">&#9654;&#9654;</button>
+        </div>
+    </main>
+</body>
+</html>
+
+
+<style>
+/* Style global */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: #1db954;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #f1f1f1;
+}
+
+/* Conteneur principal */
+.main-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #181818;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Pochette de l'album */
+.album-cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  display: block;
+}
+
+/* Informations de l'album */
+.details {
+  margin-top: 20px;
+}
+
+.details h2 {
+  margin: 0;
+  font-size: 1.
+}
+
+</style>
