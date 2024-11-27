@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+
+        <img class="logo" src="Logo.WebP">
+        <div class="site-name">SnakeBeat</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="SnakeBeatacc.html">Accueil</a></li>
+                <li><a href="#playlist">Playlist</a></li>
+                <li><a href="SnakeBeatChanson.html">Écouter</a></li>
+                <li><a href="#playlist">Playlist</a></li>
+            </ul>
+        </nav>
+      </header>
+
+    <div class="music-container">
+        <img src="https://gal.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F06.2F30.2Fce2cf0a2-73d7-4b11-a98a-cd7b0dca471a.2Ejpeg/920x518/quality/80/daniel-balavoine.jpg" alt="Daniel Balavoine" class="music-image">
+        <div class="artist-name">Daniel Balavoine</div>
+
+        <div class="progress-bar">
+            <div class="progress-bar-filled" id="progress-bar-filled"></div>
+        </div>
+
+        <audio id="audio" src="chemin/vers/votre/musique.mp3" type="audio/mpeg" controls></audio>
+
+            <div class="playlist">
+                <div class="playlist-item">Sauver l'amour - Daniel Balavoine</div>
+                <div class="playlist-item">L'Aziza - Daniel Balavoine</div>
+                <div class="playlist-item">La chaudière à Evan - Daniel Balavoine  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<style>
+    
+/* Variables globales pour les couleurs */
+:root {
+    --primary-color: #1d3557; /* Bleu marine */
+    --secondary-color: #457b9d; /* Bleu clair */
+    --accent-color: #e63946; /* Rouge vif */
+    --background-color: #f1faee; /* Blanc cassé */
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+/* Styles de base */
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.site-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: auto;     
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li {
+    display: inline;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav .menu a:hover {
+    color: var(--accent-color);
+}
+
+
+/* Conteneur musical */
+.music-container {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.music-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.artist-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress-bar-filled {
+    height: 100%;
+    width: 40%; /* Exemple de progression */
+    background-color: var(--accent-color);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Playlist */
+.playlist {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.playlist-item {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playlist-item:hover {
+    background-color: var(--accent-color);
+}
+
+/* Boutons de contrôle */
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.controls button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Bas de page / Navigation */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav div {
+    text-align: center;
+}
+
+.bottom-nav i {
+    font-size: 1.5rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .music-container {
+        width: 90%;
+    }
+
+    .playlist-item {
+        font-size: 0.9rem;
+    }
+
+    .controls button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 60px;
+    }
+
+    .site-name {
+        font-size: 1.2rem;
+    }
+
+    .playlist-item {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .controls button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
+
+</style> 
